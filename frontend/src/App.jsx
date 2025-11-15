@@ -13,7 +13,7 @@ function App() {
     const cargarPersonajes = async () => {
       try {
         // Llamamos a TU PROPIO back-end (el que corre en puerto 4000)
-        const response = await axios.get('http://localhost:4000/api/personajes');
+        const response = await axios.get('https://wikimarvel-backend.onrender.com/api/personajes');
 
         // Guardamos los datos recibidos en el estado
         setPersonajes(response.data);
